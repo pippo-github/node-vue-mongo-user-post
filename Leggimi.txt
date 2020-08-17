@@ -1,0 +1,46 @@
+note per la creazione del progetto:
+
+Visto che il processo di build mi da spesso problemi, viglio annotare questa soluzione:
+
+
+1) Creare una nuova cartella che ospita l'intero progetto: "node-vue-express-mongo-up"
+2) creare la cartella "server" vuota ed all'interno posizionare i file:
+
+    gestioneRouter.js  
+    index.js  
+    inizializzaDB.js  
+
+3) installare i pacchetti che servono all'implementazione del server, col comando:
+
+    npm i  express mongodb cors axios path
+
+Se è necessario: npm init -y
+
+4) spostarsi nella radice del progetto, e creare ex novo la cartella client 
+   (è questa che crea problemi all'intero progetto, ed è per questo che viene applicata questa procedura che
+   sto descrivendo) 
+
+   
+   col comando:
+
+
+   vue create client
+
+
+5) provare che sia eseguibile col comando:
+
+
+    npm run serve
+
+
+6) facilmente ci saranno problemi coi prefissi dei CSS per i vari costruttori dei web browser, a tal proposito si deve installare      il pacchetto autoprefixer, col comando:
+
+
+npm install autoprefixer@9.8.0
+
+
+7) ora tutto è a posto e il progetto può superare la fase di BUID, sel sotto progetto 'client', la quale andrà a salvare la cartella 'client' compliata all'interno della 'server' in maniera tale che node possa utilizzazre l'interfaccia creata in Vue, tramite l'apposito proxy configurato nel file: vue.config.js
+
+
+fatto e testato da giuseppe tarallo.
+
