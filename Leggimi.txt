@@ -39,7 +39,7 @@ Se è necessario: npm init -y
 npm install autoprefixer@9.8.0
 
 
-7) ora tutto è a posto e il progetto può superare la fase di BUID, sel sotto progetto 'client', la quale andrà a salvare la cartella 'client' compliata all'interno della 'server' in maniera tale che node possa utilizzazre l'interfaccia creata in Vue, tramite l'apposito proxy configurato nel file: vue.config.js
+7) ora tutto è a posto e il progetto può superare la fase di BUILD, del sotto progetto 'client', la quale andrà a salvare la cartella 'client' compliata all'interno della 'server' in maniera tale che node possa utilizzazre l'interfaccia creata in Vue, tramite l'apposito proxy configurato nel file: vue.config.js
 
 
 fatto e testato da giuseppe tarallo.
